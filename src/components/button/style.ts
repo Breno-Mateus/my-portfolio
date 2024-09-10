@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
-export const Botao = styled.button`
-    height: 2rem;
-    width: 6rem;
+export const Botao = styled.a`
     background-color: #6C63FF;
     color: #fff;
     font-weight: 800;
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 20px;
     border-color: rgb(27, 38, 104);
+    padding: 6px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
     
     &:hover {
         cursor: pointer;

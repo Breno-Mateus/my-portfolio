@@ -3,25 +3,45 @@ import styled, {keyframes} from "styled-components";
 export const SecaoPrincipal = styled.section`
     background: #1f242d;
     min-height: 100vh;
-
+    min-width: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 8rem;
+    padding: 9rem;
+
+    @media(max-width: 860px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
 `
 
 export const DevImage = styled.img`
     height: 20rem;
+
+    @media(max-width: 1100px){
+        height: 15rem;
+    }
+
+    @media(max-width: 645px){
+        height: 13rem;
+    }
 `
 
 export const DivText = styled.div`
-    width: 35%;
+    min-width: 25rem;
 `
 
 export const TextoPrimario = styled.h1`
     font-size: 3rem;
     font-weight: 950;
+
+    @media(max-width: 645px){
+        font-size: 2.5rem;
+    }
 `
 
 export const TextoSecundario = styled.h1`

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SecaoPrincipal = styled.section`
     background: #323946;
     min-height: 100vh;
+    min-width: 100vh;
     display: flex;
     flex-direction: column;
     padding: 5rem;
@@ -13,7 +14,7 @@ export const SecaoProjects = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 100px 50px;
     flex-wrap: wrap;
 `
 export const Titulo = styled.h1`

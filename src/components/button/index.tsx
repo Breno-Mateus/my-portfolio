@@ -1,9 +1,9 @@
 import { Botao } from "./style"
 import { IButtonProps } from './types'
 
-const Button = ({text} : IButtonProps) => {
+const Button = ({text, href, download} : IButtonProps) => {
     return (
-        <Botao>{text}</Botao>
+        <Botao href={href} download={download}>{text}</Botao>
     )
 }
 

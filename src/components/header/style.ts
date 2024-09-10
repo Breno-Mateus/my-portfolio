@@ -13,6 +13,7 @@ export const Cabecalho = styled.header`
     top: 0;
     left: 0;
     transition: .5s;
+    z-index: 1000;
 `
 
 export const Logo = styled.img`
@@ -25,6 +26,7 @@ export const Logo = styled.img`
 
 export const Text = styled.p`
     font-weight: 800;
+    transition: color 0.3s;
 
     &:hover {
         color: #6C63FF;

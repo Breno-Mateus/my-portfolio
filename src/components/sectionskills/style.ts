@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SecaoPrincipal = styled.section`
     background: #1f242d;
     min-height: 100vh;
+    min-width: 100vh;
     display: flex;
     flex-direction: column;
     padding: 5rem;

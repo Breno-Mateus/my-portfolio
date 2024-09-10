@@ -1,8 +1,9 @@
 import styled from "styled-components";
-
+//1040
 export const SecaoPrincipal = styled.section`
     background: #323946;
     min-height: 100vh;
+    min-width: 100vh;
 
     padding: 5rem;
 `
@@ -24,6 +25,13 @@ export const DivPrincipal = styled.div`
     justify-content: center;
     gap: 6rem;
     padding: 5rem;
+
+    @media(max-width: 1040px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 `
 
 export const Image = styled.img`
@@ -32,6 +40,8 @@ export const Image = styled.img`
 
     border-radius: 50%;
     border: 1px solid #6C63FF;
+
+
 `
 
 export const Text = styled.p`
