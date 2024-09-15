@@ -7,6 +7,7 @@ import ProjectSpotify from "../../assets/Projects_Image/spotify_projeto.png"
 import ProjectCalculator from "../../assets/Projects_Image/projeto_calculadora_imc.png"
 import ProjectParalaxe from "../../assets/Projects_Image/projeto_parallax.png"
 import ProjectGame from "../../assets/Projects_Image/projeto_jogo_da_velha.png"
+import ProjectCoffe from "../../assets/Projects_Image/projeto_coffe_page.png"
 
 
 const SectionProjects = () => {
@@ -15,6 +16,8 @@ const SectionProjects = () => {
             <Titulo>Projetos</Titulo>
 
             <SecaoProjects>
+                <ProjectsBox ProjectName={ProjectCoffe} TitleProject="Coffe Page" Description="Desenvolvi um website para uma cafeteria, focando em uma experiência de usuário moderna."  LinkWeb="https://coffe-page-inky.vercel.app/" LinkGithub="https://github.com/Breno-Mateus/Coffe_Page"/>
+            
                 <ProjectsBox ProjectName={ProjectJazz} TitleProject="Lading Page Jazz" Description="Lading page de uma escola de jazz utilizando HTML, CSS e também o conceito de mobile first."  LinkWeb="https://breno-mateus.github.io/Tom-s-Jazz-School/" LinkGithub="https://github.com/Breno-Mateus/Tom-s-Jazz-School"/>
 
                 <ProjectsBox ProjectName={ProjectSpotify} TitleProject="Spotify" Description="Réplica da página do Spotify utilizando HTML, CSS e JavaScript." LinkWeb="https://spotify-project-pi.vercel.app/" LinkGithub="https://github.com/Breno-Mateus/Spotify_Project"/>
