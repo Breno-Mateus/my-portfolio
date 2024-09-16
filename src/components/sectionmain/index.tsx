@@ -11,7 +11,7 @@ const SectionMain = () => {
                 <TextoSecundario> Eu sou um </TextoSecundario>
                 <TextoEstilo>desenvolvedor front-end</TextoEstilo>
                 <br/>
-                <Button href="../../assets/Download_CV/Currículo.pdf" download="Currículo.pdf" text="Download CV"/>
+                <Button href="/Currículo.pdf" text="Download CV"/>
             </DivText>
 
             <DevImage src={Dev}/>
