@@ -54,7 +54,7 @@ export const Card = styled.div`
         height: 16rem;
 
         &:hover{
-            height: 23.5rem;
+            height: 21.5rem;
         }
     }
 
@@ -84,7 +84,7 @@ export const Text = styled.p`
     padding: 1rem 2rem 3rem 2rem;
 
     @media(max-width: 860px){
-        font-size: .9rem;
+        font-size: .7rem;
     }
 `
 
