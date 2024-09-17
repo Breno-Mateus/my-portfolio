@@ -8,6 +8,10 @@ export const SecaoPrincipal = styled.section`
     flex-direction: column;
     padding: 5rem;
     gap: 5rem;
+
+    @media(max-width: 860px){
+        padding: 4rem;
+    }
 `
 
 export const SecaoSkills = styled.section`
@@ -16,6 +20,11 @@ export const SecaoSkills = styled.section`
     justify-content: center;
     gap: 3rem;
     flex-wrap: wrap;
+
+    @media(max-width: 860px){
+        padding: .5rem;
+    }
+
 `
 export const Titulo = styled.h1`
     font-weight: 950;

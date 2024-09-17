@@ -35,7 +35,7 @@ export const Card = styled.div`
 
 
     &:hover{
-        height: 400px;
+        height: 25rem;
     }
 
     &:hover ${BoxImg} {
@@ -52,6 +52,10 @@ export const Card = styled.div`
     @media(max-width: 860px){
         width: 16rem;
         height: 16rem;
+
+        &:hover{
+            height: 22rem;
+        }
     }
 
 `
