@@ -3,7 +3,7 @@ import styled, {keyframes} from "styled-components";
 export const SecaoPrincipal = styled.section`
     background: #1f242d;
     min-height: 100vh;
-    min-width: 100vh;
+    min-width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,6 +33,11 @@ export const DevImage = styled.img`
 
 export const DivText = styled.div`
     min-width: 25rem;
+
+    @media(max-width: 860px){
+        margin-left: 2rem;
+        min-width: 22rem;
+    }
 `
 
 export const TextoPrimario = styled.h1`
@@ -40,7 +45,7 @@ export const TextoPrimario = styled.h1`
     font-weight: 950;
 
     @media(max-width: 645px){
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 `
 
@@ -69,4 +74,8 @@ export const TextoEstilo = styled.h1`
     animation: 
     ${typing} 3.5s steps(40, end) infinite alternate, 
     ${blinkCaret} 0.75s step-end infinite;
+
+    @media(max-width: 645px){
+        font-size: 1.8rem;
+    }
 `

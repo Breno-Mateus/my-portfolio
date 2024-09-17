@@ -15,4 +15,8 @@ export const Botao = styled.a`
         cursor: pointer;
         background-color: #524af7;
     }
+
+    @media(max-width: 860px){
+        font-size: .7rem;
+    }
 `

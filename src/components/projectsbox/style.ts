@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 export const BoxImg = styled.div`    
-    width: 300px;
-    height: 220px;
+    width: 18.75rem;
+    height: 13.75rem;
     border-radius: 12px;
     transition: .3s;
     overflow: hidden;
-
+    
+    @media(max-width: 860px){
+        width: 11.75rem;
+        height: 10.75rem;
+    }
 `
 
 export const BoxText = styled.div`
@@ -19,8 +23,8 @@ export const BoxText = styled.div`
 
 export const Card = styled.div`
     background-color: #1f242d;
-    width: 350px;
-    height: 300px;
+    width: 21.875rem;
+    height: 21.875rem;
     border-radius: 10px;
     box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
     transition: 0.3s;
@@ -45,6 +49,11 @@ export const Card = styled.div`
         height: 250px;
     }
 
+    @media(max-width: 860px){
+        width: 16rem;
+        height: 16rem;
+    }
+
 `
 
 export const Image = styled.img`
@@ -60,11 +69,19 @@ export const Title = styled.h3`
     line-height: 3rem;
     color: #fff;
     text-transform: uppercase;
+
+    @media(max-width: 860px){
+        font-size: .9rem;
+    }
 `
 
 export const Text = styled.p`
     color: #fff;
     padding: 1rem 2rem 3rem 2rem;
+
+    @media(max-width: 860px){
+        font-size: .9rem;
+    }
 `
 
 export const DivLink = styled.div`

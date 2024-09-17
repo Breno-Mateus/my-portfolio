@@ -8,7 +8,7 @@ export const Cabecalho = styled.header`
     justify-content: space-around;
     align-items: center;
 
-    width: 100%;
+    width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -22,6 +22,10 @@ export const Logo = styled.img`
     border: 1px solid #6C63FF;
     margin-top: 1rem;
     margin-bottom: 1rem;
+
+    @media(max-width: 860px){
+        height: 1.5rem;
+    }
 `
 
 export const Text = styled.p`
@@ -31,5 +35,9 @@ export const Text = styled.p`
     &:hover {
         color: #6C63FF;
         cursor: pointer;
+    }
+
+    @media(max-width: 860px){
+        font-size: .5rem;
     }
 `

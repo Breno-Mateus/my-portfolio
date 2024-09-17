@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const DivFooter = styled.div`
     background-color: #1f242d;
     height: 9.375rem;
-    min-width: 100vh;
+    min-width: 100vw;
     text-align: center;
     color: #fff;
     padding: 1rem;
@@ -18,6 +18,10 @@ export const Title = styled.h2`
     text-transform: uppercase;
     text-align: center;
     font-weight: 950;
+
+    @media(max-width: 860px){
+        font-size: 1rem;
+    }
 `
 
 export const DivIcons = styled.div`
@@ -43,7 +47,16 @@ export const LinkProject = styled.a`
 export const IconsImage = styled.img`
     height: 2.188rem;
     width: 2.188rem;
+
+    @media(max-width: 860px){
+        height: 1.5rem;
+        width: 1.5rem;
+    }
 `
 export const Text = styled.p`
     font-weight: 700;
+
+    @media(max-width: 860px){
+        font-size: .7rem;
+    }
 `
