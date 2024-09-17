@@ -23,6 +23,8 @@ export const SecaoSkills = styled.section`
 
     @media(max-width: 860px){
         padding: .5rem;
+
+        gap: 2rem;
     }
 
 `

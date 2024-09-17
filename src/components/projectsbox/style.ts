@@ -54,7 +54,7 @@ export const Card = styled.div`
         height: 16rem;
 
         &:hover{
-            height: 22rem;
+            height: 23.5rem;
         }
     }
 

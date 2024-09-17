@@ -15,8 +15,8 @@ export const Box = styled.div`
     justify-content: center;
 
     @media(max-width: 860px){
-        height: 6.375rem;
-        width: 6.375rem;
+        height: 5.375rem;
+        width: 5.375rem;
     }
 `
 
@@ -25,8 +25,8 @@ export const Picture = styled.img`
     height: 3.125rem;
 
     @media(max-width: 860px){
-        height: 2.125rem;
-        width: 2.125rem;
+        height: 1.525rem;
+        width: 1.525rem;
     }
 `
 
@@ -36,6 +36,6 @@ export const Text = styled.p`
     text-align: center;
 
     @media(max-width: 860px){
-        font-size: .8rem;
+        font-size: .6rem;
     }
 `
