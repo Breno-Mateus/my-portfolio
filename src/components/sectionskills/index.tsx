@@ -8,7 +8,7 @@ import JavaScript from "../../assets/Skills_Image/js.png"
 import ImageReact from "../../assets/Skills_Image/react.png"
 import Git from "../../assets/Skills_Image/git.png"
 import Typescript from "../../assets/Skills_Image/Typescript.png"
-import Style from "../../assets/Skills_Image/stylecomponents.png"
+import Style from "../../assets/Skills_Image/stylecomponents.svg"
 import Node from "../../assets/Skills_Image/nodejs.png"
 import linux from "../../assets/Skills_Image/linux.png"
 

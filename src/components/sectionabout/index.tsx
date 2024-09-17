@@ -8,7 +8,7 @@ function SectionAbout () {
 
             <DivPrincipal>
                 <Image src={FotoBreno}/>
-                <Text>Graduando em Ciências e Tecnologia com ênfase em Tecnologia da Computação pela Universidade Federal do Rio Grande do Norte (UFRN). Possui o Técnico em Manutenção e suporte em Informática pela Escola Agrícola de Jundiaí (UFRN), [2019]. Possui interesse nas áreas relacionadas a engenharia de computação e elétrica, Desenvolvimento Web e Inteligência artificial com aplicação na física.</Text>
+                <Text>Sou um profissional dedicado, com experiência em desenvolvimento web e conhecimento em tecnologias como React.js, JavaScript, TypeScript e Node.js. Já atuei em funções técnicas que me permitiram desenvolver habilidades em supervisão, comunicação e resolução de problemas. Estou sempre buscando aprender e aprimorar minhas competências para contribuir de forma eficaz em novos desafios e projetos.</Text>
             </DivPrincipal>
         </SecaoPrincipal>
     )

@@ -53,5 +53,7 @@ export const Image = styled.img`
 
 export const Text = styled.p`
     font-size: 1rem;
-    font-weight: 800;
+    font-weight: 600;
+    text-align: justify;
+    line-height: 1.5;
 `
