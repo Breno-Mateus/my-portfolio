@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const SecaoPrincipal = styled.section`
     background: #323946;
     min-height: 100vh;
-    min-width: 100vw;
-
-    padding: 5rem;
+    min-width: 100%;
+    padding: 3rem;
 `
 
 export const Titulo = styled.h1`
@@ -33,7 +32,7 @@ export const DivPrincipal = styled.div`
         flex-direction: column;
 
         gap: 5rem;
-        padding: 1rem;
+        padding: 0;
     }
 `
 
@@ -56,4 +55,8 @@ export const Text = styled.p`
     font-weight: 600;
     text-align: justify;
     line-height: 1.5;
+
+    @media(max-width: 860px){
+        text-align: center;
+    }
 `

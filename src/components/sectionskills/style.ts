@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SecaoPrincipal = styled.section`
     background: #1f242d;
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     padding: 5rem;
@@ -23,7 +23,6 @@ export const SecaoSkills = styled.section`
 
     @media(max-width: 860px){
         padding: .5rem;
-
         gap: 2rem;
     }
 

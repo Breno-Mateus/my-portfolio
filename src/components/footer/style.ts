@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const DivFooter = styled.div`
     background-color: #1f242d;
     height: 9.375rem;
-    min-width: 100vw;
+    width: 100%;
     text-align: center;
     color: #fff;
     padding: 1rem;

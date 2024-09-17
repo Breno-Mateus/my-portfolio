@@ -8,7 +8,7 @@ export const Cabecalho = styled.header`
     justify-content: space-around;
     align-items: center;
 
-    width: 100vw;
+    min-width: 100%;
     position: fixed;
     top: 0;
     left: 0;
