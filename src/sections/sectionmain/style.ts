@@ -1,6 +1,6 @@
 import styled, {keyframes} from "styled-components";
 
-export const SecaoPrincipal = styled.section`
+export const SectionStyle = styled.section`
     background: #1f242d;
     min-height: 100vh;
     min-width: 100%;
@@ -40,7 +40,7 @@ export const DivText = styled.div`
     }
 `
 
-export const TextoPrimario = styled.h1`
+export const TextMain = styled.h1`
     font-size: 3rem;
     font-weight: 950;
 
@@ -49,7 +49,7 @@ export const TextoPrimario = styled.h1`
     }
 `
 
-export const TextoSecundario = styled.h1`
+export const TextSecondary = styled.h1`
     font-size: 2rem;
     font-weight: 950;
 `

@@ -1,9 +1,9 @@
-import Header from "../../components/header"
-import SectionMain from "../../components/sectionmain"
-import SectionAbout from "../../components/sectionabout"
-import SectionSkills from "../../components/sectionskills"
-import SectionProjects from "../../components/sectionprojects"
-import Footer from "../../components/footer"
+import Header from "../../sections/header"
+import SectionMain from "../../sections/sectionmain"
+import SectionAbout from "../../sections/sectionabout"
+import SectionSkills from "../../sections/sectionskills"
+import SectionProjects from "../../sections/sectionprojects"
+import Footer from "../../sections/footer"
 
 function App() {
 

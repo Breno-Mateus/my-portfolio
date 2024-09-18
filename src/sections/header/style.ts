@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Cabecalho = styled.header`
+export const HeaderStyle = styled.header`
     background: #1f242d;
     color: #fff;
 

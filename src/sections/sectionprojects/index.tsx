@@ -1,5 +1,5 @@
-import { SecaoPrincipal, Titulo, SecaoProjects } from "./style"
-import ProjectsBox from "../projectsbox"
+import { SectionStyle, Title, ProjectSection } from "./style"
+import ProjectsBox from "../../components/projectsbox"
 
 //imagens dos projetos
 import ProjectJazz from "../../assets/Projects_Image/projeto_jazz.png"
@@ -12,10 +12,10 @@ import ProjectCoffe from "../../assets/Projects_Image/projeto_coffe_page.png"
 
 const SectionProjects = () => {
     return(
-        <SecaoPrincipal id="SectionProjects">
-            <Titulo>Projetos</Titulo>
+        <SectionStyle id="SectionProjects">
+            <Title>Projetos</Title>
 
-            <SecaoProjects>
+            <ProjectSection>
                 <ProjectsBox ProjectName={ProjectCoffe} TitleProject="Coffe Page" Description="Desenvolvi um website para uma cafeteria, focando em uma experiência de usuário moderna."  LinkWeb="https://coffe-page-inky.vercel.app/" LinkGithub="https://github.com/Breno-Mateus/Coffe_Page"/>
             
                 <ProjectsBox ProjectName={ProjectJazz} TitleProject="Lading Page Jazz" Description="Lading page de uma escola de jazz utilizando HTML, CSS e também o conceito de mobile first."  LinkWeb="https://breno-mateus.github.io/Tom-s-Jazz-School/" LinkGithub="https://github.com/Breno-Mateus/Tom-s-Jazz-School"/>
@@ -27,8 +27,8 @@ const SectionProjects = () => {
                 <ProjectsBox ProjectName={ProjectParalaxe} TitleProject="Paralaxe Page" Description="Página web utilizando HTML, CSS e JavaScript para criar o efeito de paralaxe." LinkWeb="https://breno-mateus.github.io/Parallax-efeito/" LinkGithub="https://github.com/Breno-Mateus/Parallax-efeito"/>
 
                 <ProjectsBox ProjectName={ProjectGame} TitleProject="Jogo da velha" Description="Jogo da velha utilizando html e javascript." LinkWeb="https://breno-mateus.github.io/jogo-da-velha/" LinkGithub="https://github.com/Breno-Mateus/jogo-da-velha"/>
-            </SecaoProjects>
-        </SecaoPrincipal>
+            </ProjectSection>
+        </SectionStyle>
     )
 }
 

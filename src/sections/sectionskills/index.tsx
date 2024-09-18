@@ -1,7 +1,7 @@
-import { SecaoPrincipal,Titulo, TextDecoration, SecaoSkills } from "./style"
-import SkillsBox from "../skillsbox"
+import { SectionStyle, Title, TextDecoration, SkillSection } from "./style"
+import SkillsBox from "../../components/skillsbox"
 
-//imagem skills
+//images skills
 import Html from "../../assets/Skills_Image/html-5.png"
 import Css from "../../assets/Skills_Image/css-3.png"
 import JavaScript from "../../assets/Skills_Image/js.png"
@@ -14,10 +14,10 @@ import linux from "../../assets/Skills_Image/linux.png"
 
 const SectionSkills = () => {
     return (
-        <SecaoPrincipal id="SectionSkills">
-            <Titulo>Mihas <TextDecoration>Habilidades</TextDecoration></Titulo>
+        <SectionStyle id="SectionSkills">
+            <Title>Mihas <TextDecoration>Habilidades</TextDecoration></Title>
 
-            <SecaoSkills>
+            <SkillSection>
                 <SkillsBox image={Html} text="HTML"/>
                 <SkillsBox image={Css} text="CSS"/>
                 <SkillsBox image={JavaScript} text="JavaScript"/>
@@ -27,8 +27,8 @@ const SectionSkills = () => {
                 <SkillsBox image={Typescript} text="TypeScript"/>
                 <SkillsBox image={Style} text="Styled-Components"/>
                 <SkillsBox image={linux} text="Linux"/>
-            </SecaoSkills>
-        </SecaoPrincipal>
+            </SkillSection>
+        </SectionStyle>
     )
 }
 

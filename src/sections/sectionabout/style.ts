@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const SecaoPrincipal = styled.section`
+export const SectionStyle = styled.section`
     background: #323946;
     min-height: 100vh;
     min-width: 100%;
     padding: 3rem;
 `
 
-export const Titulo = styled.h1`
+export const Title = styled.h1`
     font-weight: 950;
     font-size: 2rem;
     text-transform: uppercase;
@@ -18,7 +18,7 @@ export const TextDecoration = styled.span`
     color: #6C63FF;
 `
 
-export const DivPrincipal = styled.div`
+export const DivMain = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;

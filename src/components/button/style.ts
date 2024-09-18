@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Botao = styled.a`
+export const ButtonStyle = styled.a`
     background-color: #6C63FF;
     color: #fff;
     font-weight: 800;
