@@ -32,6 +32,7 @@ export const HeaderStyle = styled.header<{isVisible: boolean}>`
 export const DivIcons = styled.div`
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 4rem;
     gap: 15rem;
 `
