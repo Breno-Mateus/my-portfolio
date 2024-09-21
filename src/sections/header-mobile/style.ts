@@ -12,7 +12,7 @@ export const HeaderStyle = styled.header<{isVisible: boolean}>`
 
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
