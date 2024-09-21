@@ -5,6 +5,10 @@ export const SectionStyle = styled.section`
     min-height: 100vh;
     min-width: 100%;
     padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 `
 
 export const Title = styled.h1`

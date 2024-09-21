@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MdMenu } from "react-icons/md";
 
 export const HeaderStyle = styled.header`
     background: #1f242d;
@@ -6,14 +7,18 @@ export const HeaderStyle = styled.header`
 
     display: flex;
     justify-content: space-around;
-    align-items: center;
 
     min-width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     transition: .5s;
-    z-index: 1000;
+    z-index: 900;
+
+    @media(max-width: 770px){
+        justify-content: space-around;
+        gap: 12rem;
+    }
 `
 
 export const Logo = styled.img`
@@ -39,5 +44,25 @@ export const Text = styled.p`
 
     @media(max-width: 860px){
         font-size: .5rem;
+    }
+`
+
+export const Navbar = styled(MdMenu)`
+    font-size: 2rem;
+    display: none;
+
+    @media(max-width: 770px){
+        display: block;
+    }
+`
+
+export const MenuNav = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 9rem;
+
+    @media(max-width: 770px){
+        display: none;
     }
 `

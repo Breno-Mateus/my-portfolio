@@ -1,14 +1,18 @@
-import { HeaderStyle, Logo, Text, Navbar, MenuNav } from "./style"
+import { Logo, HeaderStyle, CloseIcon, MenuNav, Text, DivIcons} from "./style.ts"
+import { Link } from "react-scroll"
+import Button from "../../components/button/index.tsx"
 import Img from "../../assets/foto_breno.jpeg"
-import Button from "../../components/button"
-import { Link } from "react-scroll";
-import { IHeaderProps } from "./type";
+import { IHeaderMobileProps } from "./type.ts"
 
-const Header = ({setMenuIsVisible} : IHeaderProps) => {
-    return (
-        <HeaderStyle>
-            <Logo src={Img} alt="Foto Breno" />
 
+const HeaderMobile = ({menuIsVisible, setMenuIsVisible} : IHeaderMobileProps) => {
+    return(
+        <HeaderStyle isVisible={menuIsVisible}>
+            <DivIcons>
+                <Logo src={Img} alt="Foto Breno"/>
+                <CloseIcon onClick={() => setMenuIsVisible(false)}/>
+            </DivIcons>
+    
             <MenuNav>
                 <Link to="SectionStyle" smooth={true} duration={500}> <Text>Home</Text> </Link>
                 <Link to="SectionAbout" smooth={true} duration={500}> <Text>Sobre</Text> </Link>
@@ -16,10 +20,8 @@ const Header = ({setMenuIsVisible} : IHeaderProps) => {
                 <Link to="SectionProjects" smooth={true} duration={500}> <Text>Projetos</Text> </Link>
                 <Button href="https://www.linkedin.com/in/breno-mateus-8b9a99211/" text="Contato"/>
             </MenuNav>
-            
-            <Navbar onClick={() => setMenuIsVisible(true)}/>
         </HeaderStyle>
     )
 }
 
-export default Header
+export default HeaderMobile
