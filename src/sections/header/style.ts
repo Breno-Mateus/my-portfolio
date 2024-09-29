@@ -1,24 +1,34 @@
 import styled from "styled-components";
-import { MdMenu } from "react-icons/md";
 
-export const HeaderStyle = styled.header`
+export const HeaderStyle = styled.header<{isOpen: boolean}>`
     background: #1f242d;
     color: #fff;
 
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
 
-    min-width: 100%;
+    width: 100%;
+    height: ${(isOpen) => (isOpen.isOpen ? '100%' : '10%')};
     position: fixed;
-    top: 0;
-    left: 0;
-    transition: .5s;
     z-index: 900;
+`
+
+export const DivMenu = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+`
+
+export const DivButton = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media(max-width: 770px){
-        justify-content: space-around;
-        gap: 12rem;
+        display: none;
     }
 `
 
@@ -26,12 +36,6 @@ export const Logo = styled.img`
     border-radius: 50%;
     height: 2rem;
     border: 1px solid #6C63FF;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-    @media(max-width: 860px){
-        height: 1.5rem;
-    }
 `
 
 export const Text = styled.p`
@@ -42,28 +46,23 @@ export const Text = styled.p`
         color: #6C63FF;
         cursor: pointer;
     }
-
-    @media(max-width: 860px){
-        font-size: .5rem;
-    }
-`
-
-export const Navbar = styled(MdMenu)`
-    font-size: 2rem;
-    display: none;
-
-    @media(max-width: 770px){
-        display: block;
-    }
 `
 
 export const MenuNav = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 9rem;
+    gap: 5rem;
 
     @media(max-width: 770px){
         display: none;
+    }
+`
+
+export const MenuHamburger = styled.div`
+    display: none;
+
+    @media(max-width: 770px){
+        display: block;
     }
 `
