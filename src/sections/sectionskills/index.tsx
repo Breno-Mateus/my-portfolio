@@ -12,6 +12,11 @@ import Style from "../../assets/Skills_Image/stylecomponents.svg"
 import Node from "../../assets/Skills_Image/nodejs.png"
 import linux from "../../assets/Skills_Image/linux.png"
 import tailwind from "../../assets/Skills_Image/Tailwind CSS.png"
+import vercel from "../../assets/Skills_Image/Vercel.png"
+import figma from "../../assets/Skills_Image/figma.png"
+import test from "../../assets/Skills_Image/Testing-Library.svg"
+import jest from "../../assets/Skills_Image/jest.svg"
+import post from "../../assets/Skills_Image/postman.png"
 
 const SectionSkills = () => {
     return (
@@ -28,7 +33,12 @@ const SectionSkills = () => {
                 <SkillsBox image={Typescript} text="TypeScript"/>
                 <SkillsBox image={Style} text="Styled-Components"/>
                 <SkillsBox image={tailwind} text="Tailwind CSS"/>
+                <SkillsBox image={jest} text="Jest"/>
+                <SkillsBox image={test} text="Testing Library"/>
                 <SkillsBox image={linux} text="Linux"/>
+                <SkillsBox image={figma} text="Figma"/>
+                <SkillsBox image={post} text="Postman"/>
+                <SkillsBox image={vercel} text="Vercel"/>
             </SkillSection>
         </SectionStyle>
     )
