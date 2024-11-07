@@ -1,25 +1,31 @@
-import { Card, Image, Title, Text, BoxText, IconsImage, DivLink, LinkProject, BoxImg } from "./style"
-import { IProjectsBox } from "./types"
-import WebImage from "../../assets/icons_Image/internet.png"
-import GitHubImage from "../../assets/icons_Image/github.png"
+import { Card, Image, Title, Text, BoxText, DivTec, LinkProject, BoxImg, TextDecoration } from "./style"
+import { projectsBoxProps } from "../../types/props-projects-box"
 
-const ProjectsBox = ({ProjectName, TitleProject, Description, LinkWeb, LinkGithub, tecnologias} : IProjectsBox) => {
+import { StackIcons } from 'github-automated-repos';
+
+
+const ProjectsBox = ({data} : projectsBoxProps) => {
     return(
-        <Card>
+        <Card key={data.id}>
             <BoxImg>
-                <Image src={ProjectName}/>
+                <Image src={data.banner}/>
             </BoxImg>
 
             <BoxText>
-                <Title>{TitleProject}</Title>
-                <Text>{Description}</Text>
-                <Text>Tecnologias: {tecnologias}</Text>
+                <LinkProject href={data.html_url}> <Title>{data.name}</Title> </LinkProject>
+                <Text>{data.description}</Text>
+                <LinkProject href={data.homepage}> <TextDecoration>Deploy</TextDecoration> </LinkProject>
             </BoxText>
 
-            <DivLink>
-                <LinkProject href={LinkWeb} > <IconsImage src={WebImage} /> </LinkProject>
-                <LinkProject href={LinkGithub} > <IconsImage src={GitHubImage} /> </LinkProject>
-            </DivLink>
+            <DivTec>
+                {data.topics.map((icon) => {
+                        return (
+                        <div key={icon}>
+                            <StackIcons key={icon} className="stack_Icon" itemTopics={icon} />
+                        </div>
+                        )
+                    })}
+            </DivTec>
         </Card>
     )
 }
